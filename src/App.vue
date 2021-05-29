@@ -8,7 +8,7 @@
     <div id="intro" v-else>
       <div>
         Zaloguj się e-mailem
-        <input type="email" v-model="email2" style="margin-right: 2px" />
+        <input type="email" v-model="email2" />
         <button @click="loginByEmail()">Wchodzę</button>
       </div>
     </div>
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import 'milligram';
 export default {
   data() {
     return {
